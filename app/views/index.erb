@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, <%= em("world!") %></p>
+
+  <ul>
+  <% @users.each do |user| %>
+    <li><%= user.username %></li>
+    <li><%= user.email %></li>
+  <% end %>
+  </ul>
+</div>
